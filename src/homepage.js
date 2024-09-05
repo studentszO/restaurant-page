@@ -15,5 +15,4 @@ export const homepage = (() => {
     paraTwo.textContent = `This is the best place for fondue's adorer! Come disgust our fondue and 
     other things for the best price in the continent. You will NOT be deceived.
     The best fondue's place is Zireael's tavern!`;
-
-})();
+});
