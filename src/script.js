@@ -1,6 +1,7 @@
 import "./style.css";
 import { homepage } from "./homepage.js";
 import { ourStory } from "./ourstory.js";
+import { hoursAndLocation } from "./hourslocation.js";
 
 const buttons = document.querySelectorAll("button")
 homepage();
@@ -13,21 +14,20 @@ buttons.forEach((e) => e.addEventListener("click", () => {
     contentContainer.textContent = "";
     console.log(setPageId )
 
+    if (id === 0 && setPageId !== 0) {
+        homepage();
+        setPageId = 0;
+    }
     if (id === 1) {
         ourStory();
         setPageId = 1
     }
-    else if (id === 0 && setPageId !== 0) {
-        homepage();
-        setPageId = 0;
-    }
     // else if (id === 2) {
     //     setPageId = 2;
     // }
-    // else if (id === 3) {
-    //     setPageId = 3;
-    // }
-    // else if (id === 4) {
-    //     setPageId = 4;
-    // }
+    else if (id === 3) {
+        hoursAndLocation();
+        setPageId = 3;
+    }
+
 }));
