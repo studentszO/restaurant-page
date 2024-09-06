@@ -2,6 +2,7 @@ import "./style.css";
 import { homepage } from "./homepage.js";
 import { ourStory } from "./ourstory.js";
 import { hoursAndLocation } from "./hourslocation.js";
+import { theMenu } from "./menu.js";
 
 const buttons = document.querySelectorAll("button")
 homepage();
@@ -22,9 +23,10 @@ buttons.forEach((e) => e.addEventListener("click", () => {
         ourStory();
         setPageId = 1
     }
-    // else if (id === 2) {
-    //     setPageId = 2;
-    // }
+    else if (id === 2) {
+        setPageId = 2;
+        theMenu();
+    }
     else if (id === 3) {
         hoursAndLocation();
         setPageId = 3;
