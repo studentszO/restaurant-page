@@ -1,25 +1,71 @@
 :root {
-    background-color: #222;
+    background-color: #181818;
+    --main-clr: rgb(98, 255, 145);
+    --sub-clr: rgb(61, 163, 92);
 }
 
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    display: grid;
 }
 
 #content {
     width: 950px;
-    background-color: #181818;
+    background-color: #222222;
     color:aliceblue;
     text-align: center;
-    img {
-        height: 500px;
-    }
+    align-self: center;
+    justify-self: center;
+    padding-bottom: 35px;
+    border-radius: 0 0px 15px 15px;
+    border: 1px solid var(--sub-clr);
+    border-image: 
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      var(--main-clr),
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+    border-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    display: grid;
+    place-content: center;
 }
 
 nav {
     background-color: #444;
-    color: aliceblue;
+    color: rgb(3, 128, 236);
     padding: 20px
+}
+
+img {
+    border-radius: 25px;
+    border: #222 solid 2px;
+    margin-bottom: 25px;
+    height: 400px;
+    width: 680px;
+    object-fit: cover;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h2 {
+    color: var(--main-clr);
+    padding: 25px;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    &::first-letter {
+        font-weight: 1000;
+    }
+    
+}
+
+p {
+    width: 450px;
 }

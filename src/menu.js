@@ -12,6 +12,20 @@ export const theMenu = (() => {
     
     h2.textContent = "The Menu";
     img.src = menuImg;
+    img.id = "menu-img";
+
+    paraOne.style.marginBottom = "10px";
+    paraOne.style.fontSize = "1.2rem";
+    paraOne.style.fontWeight = "900";
+    paraOne.style.color = "var(--main-clr)"
+    paraOne.style.textAlign = "left";
+    paraOne.style.marginLeft = "10px";
+    paraThree.style.textAlign = "left";
+    paraTwo.style.textAlign = "left";
+    paraTwo.style.marginLeft = "40px";
+    paraThree.style.marginLeft = "40px";
+    paraTwo.style.marginBottom = "10px";
+
     paraOne.textContent = "We serve only our special menu here.";
     paraTwo.textContent = `And you know what it is! Yes, the famous elven fondue from Erlenwald. One of the wonders of the Continent!`;
     paraThree.textContent = "For a small sum of 4 florens, you can taste this amazing fondue!"
