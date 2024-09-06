@@ -19,12 +19,23 @@ export const hoursAndLocation = (() => {
     divHours.append(h2Hours, paraTwo);
     paraTwo.append(weekdays, document.createElement("hr"), saturday, document.createElement("hr"),  sunday);
 
+    paraOne.style.marginBottom = "10px";
+    paraOne.style.fontSize = "1.2rem";
+    paraOne.style.width = "fit-content";
+    paraOne.style.fontWeight = "900";
+    paraOne.style.color = "var(--main-clr)"
+    paraOne.style.textAlign = "left";
+    paraOne.style.marginLeft = "10px";
+    paraTwo.style.textAlign = "left";
+    paraTwo.style.width = "fit-content"
+    paraTwo.style.margin= "35px auto";
+    paraTwo.style.justifySelf = "center"
     
     h2Location.textContent = "Where are we?";
     h2Hours.textContent = "Opening hours";
     img.src = map;
-    paraOne.textContent = "The tavern is located on the frontier of the forest of Erlenwald, just to the north of Nazair";
-    weekdays.textContent = "ON WEEK DAYS: FROM 11AM TO 10PM"
-    saturday.textContent = "ON SATURDAY: FROM 9AM TO 12PM"
-    sunday.textContent = "ON SUNDAY: FROM 11AM TO 3PM"
+    paraOne.textContent = "The tavern is located on the frontier of the forest of Erlenwald (x), just to the north of Nazair";
+    weekdays.textContent = "ON WEEK DAYS: FROM 11AM TO 10PM";
+    saturday.textContent = "ON SATURDAY: FROM 9AM TO 12PM";
+    sunday.textContent = "ON SUNDAY: FROM 11AM TO 3PM";
 });

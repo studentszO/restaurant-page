@@ -12,9 +12,22 @@ export const ourStory = (() => {
     
     h2.textContent = "Our Story";
     img.src = ourStoryImage;
+
+    paraOne.style.marginBottom = "10px";
+    paraOne.style.fontSize = "1.2rem";
+    paraOne.style.fontWeight = "900";
+    paraOne.style.color = "var(--main-clr)"
+    paraOne.style.textAlign = "left";
+    paraOne.style.marginLeft = "10px";
+    paraThree.style.textAlign = "left";
+    paraTwo.style.textAlign = "left";
+    paraTwo.style.marginLeft = "40px";
+    paraThree.style.marginLeft = "40px";
+    paraTwo.style.marginBottom = "10px";
+
     paraOne.textContent = "This tavern was created around 1392.";
     paraTwo.textContent = `The name Zireael comes from the one of the many aliases that 
     Cirilla Fiona Elen Riannon got to this age. It's an elven word for "Swallow".
     This elven word was so beautiful that we decided to use it for our wonderful tavern in the woods of Erlenwald.`;
-    paraThree.textContent = "Everyone is welcome here, whatever race you comes from!"
+    paraThree.textContent = "Everyone is welcome here, whatever race you comes from!";
 });

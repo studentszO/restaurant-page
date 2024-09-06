@@ -9,6 +9,17 @@ export const homepage = (() => {
 
     contentContainer.append(h2, img, paraOne, paraTwo);
     
+    paraOne.style.marginBottom = "10px";
+    paraOne.style.width = "fit-content";
+    paraOne.style.fontSize = "1.2rem";
+    paraOne.style.fontWeight = "900";
+    paraOne.style.color = "var(--main-clr)"
+    paraOne.style.textAlign = "left";
+    paraOne.style.marginLeft = "10px";
+    paraTwo.style.textAlign = "left";
+    paraTwo.style.marginLeft = "40px";
+    paraTwo.style.marginBottom = "10px";
+
     h2.textContent = "Zireael's Tavern";
     img.src = homeImage;
     paraOne.textContent = "We welcome YOU to our humble establishment webpage!";
