@@ -10,11 +10,14 @@ homepage();
 let setPageId = 0;
 const contentContainer = document.querySelector("#content");
 
+function changeButtonColor() {
+    buttons.forEach((e) => e.style.backgroundColor = "");
+    buttons[setPageId].style.backgroundColor = "var(--main-clr)";
+};
+changeButtonColor(); 
+
 buttons.forEach((e) => e.addEventListener("click", () => {
     const id = Array.from(e.parentNode.children).indexOf(e);
-    // e.style.backgroundColor = "var(--main-clr)"
-    // contentContainer.textContent = "";
-    console.log(setPageId)
 
     if (id === 0 && setPageId !== 0) {
         contentContainer.textContent = "";
@@ -36,5 +39,7 @@ buttons.forEach((e) => e.addEventListener("click", () => {
         hoursAndLocation();
         setPageId = 3;
     }
+
+    changeButtonColor();
 
 }));
